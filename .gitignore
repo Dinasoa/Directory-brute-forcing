@@ -2,3 +2,4 @@
 .directory
 venv/
 .venv/
+__pycache__/
