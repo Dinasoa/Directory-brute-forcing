@@ -2,10 +2,12 @@ import requests
 
 
 def check_route(url, word):
-    # Sends an HTTP GET request to the specified URL
+    """
+       Here we are going to check either the URL specified resource is found on the server
+       :param dir_list: wordlist path
+       :param base_url: the target website
+       :return: the existent route found
+    """
     rq = requests.get(f"{url}{word}")
-
-    # Checks if the status code of the response is not equal to 404
     if rq.status_code != 404:
-        # Returns the URL if the corresponding resource is found on the server
-        return f"{url}{word}"
+        return f"{url}{word} found"

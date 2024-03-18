@@ -64,6 +64,4 @@ project
 │   │  config.py (contains the base URL)
 └───wordlist
     │   dir_list.txt
-└───templates
-    │   index.html
 ```
